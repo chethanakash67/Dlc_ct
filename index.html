@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollegeTips Digital Literacy Program for Parents</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* Custom styles for advanced testimonial design */
+        .testimonial-container {
+            position: relative;
+            scroll-behavior: smooth;
+        }
+        .testimonial-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid transparent;
+            background: linear-gradient(to right, #ffffff, #ffffff) padding-box,
+                        linear-gradient(45deg, #3b82f6, #60a5fa) border-box;
+        }
+        .testimonial-card:hover {
+            transform: scale(1.05) rotate(1deg);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        .quote-text::before {
+            content: '“';
+            font-size: 2rem;
+            color: #3b82f6;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .quote-text::after {
+            content: '”';
+            font-size: 2rem;
+            color: #3b82f6;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+        .scroll-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .testimonial-container:hover .scroll-arrow {
+            opacity: 1;
+        }
+        .scroll-arrow-left {
+            left: 0;
+        }
+        .scroll-arrow-right {
+            right: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">CollegeTips Digital Literacy Program</h1>
+            <p class="text-xl mt-2">The Perfect Gift for Your Parents!</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar (Horizontal, Spread Evenly) -->
+    <nav class="bg-blue-700 text-white py-4 sticky top-0 z-10 shadow-md">
+        <div class="container mx-auto px-4 flex justify-evenly flex-wrap gap-4">
+            <a href="#hero" class="text-lg font-medium hover:text-gray-200 transition-colors">Home</a>
+            <a href="#about" class="text-lg font-medium hover:text-gray-200 transition-colors">About</a>
+            <a href="#program-details" class="text-lg font-medium hover:text-gray-200 transition-colors">Program Details</a>
+            <a href="#how-it-works" class="text-lg font-medium hover:text-gray-200 transition-colors">How It Works</a>
+            <a href="#enroll" class="text-lg font-medium hover:text-gray-200 transition-colors">Pricing</a>
+            <a href="#footer" class="text-lg font-medium hover:text-gray-200 transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-semibold text-gray-800">Gift Your Parents a Digital Life!</h2>
+            <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+                Since when haven’t you gifted your parents something special? Make their lives easy and exciting with our Digital Literacy Program, designed to help them master digital platforms and stay trendy!
+            </p>
+            <a href="https://razorpay.com/payment-button/pl_JGQ3ZFibsntWmN/view/?utm_source=payment_button&utm_medium=button&utm_campaign=payment_button" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700">Enroll Now for Just ₹499!</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-100 py-10">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-gray-800 text-center">About the Program</h2>
+            <div class="mt-6 max-w-3xl mx-auto text-gray-600">
+                <p class="text-lg mb-4 text-center">
+                    The <span class="font-bold">CollegeTips Digital Literacy Program</span> is a heartfelt gift to empower your parents and elder family members with the skills to thrive in today’s digital world. Designed for seniors who may find technology daunting, this program makes learning simple, fun, and accessible.
+                </p>
+                <ul class="list-disc list-inside space-y-2 text-lg">
+                    <li><span class="font-medium">Master Digital Tools</span>: Learn to use apps like Zomato, Ola, and Google Maps with ease.</li>
+                    <li><span class="font-medium">Stay Trendy</span>: Understand tech terms like "tweet," "meme," and "viral" to keep up with modern trends.</li>
+                    <li><span class="font-medium">Stay Safe</span>: Gain tips to avoid online and banking frauds for secure digital interactions.</li>
+                    <li><span class="font-medium">Live Vibrantly</span>: Enjoy tutorials on dance, fitness, fashion, and communication for a lively lifestyle.</li>
+                </ul>
+                <p class="text-lg mt-4 text-center">
+                    Delivered conveniently via WhatsApp in Hindi or English, the program eliminates the need for complex platforms like Zoom. New lessons are introduced every alternate day, giving your parents time to practice at their own pace—perfect for busy schedules. For just <span class="font-bold">₹499</span>, this 2-month program is an affordable way to gift your parents a tech-savvy, connected, and exciting life. Enroll today and show your appreciation for those who always gave you their best!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Details Section -->
+    <section id="program-details" class="bg-gray-50 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-gray-800 text-center">What’s in the Program?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-medium text-gray-800">Mobile App Mastery</h3>
+                    <p class="text-gray-600 mt-2">Learn to use apps like Zomato, Ola, Google Maps, and more with ease.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-medium text-gray-800">Tech Trends & Terms</h3>
+                    <p class="text-gray-600 mt-2">Understand tweets, memes, viral content, and the latest digital lingo.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-medium text-gray-800">Online Safety</h3>
+                    <p class="text-gray-600 mt-2">Stay protected with tips on avoiding online and banking frauds.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-medium text-gray-800">Health & Fitness</h3>
+                    <p class="text-gray-600 mt-2">Access dance, fitness, and communication tutorials for a vibrant lifestyle.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-medium text-gray-800">Fashion & Style</h3>
+                    <p class="text-gray-600 mt-2">Stay trendy with fashion tips tailored for your parents.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-medium text-gray-800">And Much More!</h3>
+                    <p class="text-gray-600 mt-2">Explore a variety of fun and practical digital skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-semibold text-gray-800 text-center">How It Works?</h1>
+            <div class="mt-8 max-w-3xl mx-auto text-gray-600">
+                <img src="modules.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Parent's Testimonials Section (Advanced Design, Horizontally Scrollable) -->
+    <section id="testimonials" class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-gray-800 text-center">Parent's Testimonials</h2>
+            <div class="mt-8 testimonial-container">
+                <div class="flex overflow-x-auto space-x-6 pb-4 snap-x snap-mandatory">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card flex-shrink-0 w-80 snap-center p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="avatar bg-blue-600 mr-4">KM</div>
+                            <p class="font-medium text-gray-800">Mrs. Kalindi Mishra</p>
+                        </div>
+                        <div class="relative">
+                            <p class="quote-text text-lg text-gray-600 italic relative">
+                                Mere bache ne mujhe itna accha gift diya hai, main usse thank you bolna chaahti hu. Pehle main baccho se puchti thi k mujhe Taxi book karna seekha de, toh yeh chirr jaate the, lekin ab meh khud kar leti hu! Thank You Beta! Thank You CollegeTips!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card flex-shrink-0 w-80 snap-center p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="avatar bg-green-600 mr-4">RS</div>
+                            <p class="font-medium text-gray-800">Mr. Rajesh Sharma</p>
+                        </div>
+                        <div class="relative">
+                            <p class="quote-text text-lg text-gray-600 italic relative">
+                                I never thought I could learn to use apps like Zomato at my age! My daughter gifted me this program, and now I can order food on my own. It feels so empowering. Thank you, CollegeTips!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card flex-shrink-0 w-80 snap-center p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="avatar bg-purple-600 mr-4">SP</div>
+                            <p class="font-medium text-gray-800">Mrs. Sunita Patel</p>
+                        </div>
+                        <div class="relative">
+                            <p class="quote-text text-lg text-gray-600 italic relative">
+                                This program made me understand what ‘viral’ means! I can now chat with my grandchildren about memes, and they are so surprised. CollegeTips has brought us closer. Highly recommend it!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-card flex-shrink-0 w-80 snap-center p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="avatar bg-red-600 mr-4">AK</div>
+                            <p class="font-medium text-gray-800">Mr. Anil Kumar</p>
+                        </div>
+                        <div class="relative">
+                            <p class="quote-text text-lg text-gray-600 italic relative">
+                                Learning to use Google Maps has made my daily walks so much easier! I don’t get lost anymore, and I feel more independent. My son enrolled me in this program, and I’m so grateful to CollegeTips!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Testimonial 5 -->
+                    <div class="testimonial-card flex-shrink-0 w-80 snap-center p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="avatar bg-yellow-600 mr-4">PG</div>
+                            <p class="font-medium text-gray-800">Mrs. Preeti Gupta</p>
+                        </div>
+                        <div class="relative">
+                            <p class="quote-text text-lg text-gray-600 italic relative">
+                                I was always scared of online scams, but CollegeTips taught me how to stay safe. Now I confidently use my bank app to pay bills. This program is a game-changer for me!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Testimonial 6 -->
+                    <div class="testimonial-card flex-shrink-0 w-80 snap-center p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="avatar bg-teal-600 mr-4">VS</div>
+                            <p class="font-medium text-gray-800">Mr. Vinod Singh</p>
+                        </div>
+                        <div class="relative">
+                            <p class="quote-text text-lg text-gray-600 italic relative">
+                                The dance tutorials were so much fun! I never thought I could learn new moves at this age. CollegeTips made me feel young again. Thank you for this wonderful experience!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Scroll Arrows -->
+                <div class="scroll-arrow scroll-arrow-left" onclick="this.parentElement.querySelector('div').scrollBy({ left: -320, behavior: 'smooth' })">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="scroll-arrow scroll-arrow-right" onclick="this.parentElement.querySelector('div').scrollBy({ left: 320, behavior: 'smooth' })">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="enroll" class="bg-blue-600 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-semibold">The Last Question: How Much?</h2>
+            <p class="text-xl mt-4">Just <span class="font-bold">₹499</span> for the entire 2-month program!</p>
+            <p class="text-lg mt-2">Yes, that’s right—it’s the price of a pizza and coke!</p>
+            <a href="mailto:info@collegetips.in" class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100">Contact Us to Enroll!</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-semibold mb-4">Have Any Doubts?</h2>
+            <p class="text-lg mb-4">Contact Us</p>
+            <div class="flex justify-center space-x-8 mb-4 flex-wrap gap-4">
+                <a href="https://www.instagram.com/collegetips.in" target="_blank" class="flex items-center text-white hover:text-gray-300">
+                    <i class="fab fa-instagram text-xl mr-2"></i>
+                    <span class="hover:underline">Instagram</span>
+                </a>
+                <a href="https://www.linkedin.com/company/collegetips" target="_blank" class="flex items-center text-white hover:text-gray-300">
+                    <i class="fab fa-linkedin text-xl mr-2"></i>
+                    <span class="hover:underline">LinkedIn</span>
+                </a>
+                <a href="tel:+919876543210" class="flex items-center text-white hover:text-gray-300">
+                    <i class="fas fa-phone text-xl mr-2"></i>
+                    <span class="hover:underline">Phone</span>
+                </a>
+                <a href="mailto:info@collegetips.in" class="flex items-center text-white hover:text-gray-300">
+                    <i class="fas fa-envelope text-xl mr-2"></i>
+                    <span class="hover:underline">Email</span>
+                </a>
+            </div>
+            <p class="text-sm">© 2025 CollegeTips.in. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function submitForm() {
+            const parentName = document.getElementById('parent-name')?.value;
+            const yourName = document.getElementById('your-name')?.value;
+            const email = document.getElementById('email')?.value;
+            const phone = document.getElementById('phone')?.value;
+            const language = document.getElementById('language')?.value;
+
+            if (parentName && yourName && email && phone && language) {
+                alert(`Thank you, ${yourName}! Your enrollment for ${parentName} has been submitted. We'll contact you via WhatsApp (${phone}) soon.`);
+            } else {
+                alert('Please fill out all fields.');
+            }
+        }
+    </script>
+</body>
+</html>
